@@ -5,6 +5,7 @@ class Directory
         @name= name
     end
     def make
+        Dir.mkdir(name,0707)
     end
 end
 

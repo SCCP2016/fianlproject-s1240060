@@ -1,6 +1,8 @@
 #!/usr/local/gnu/bin/ruby
 
+class Main
+    def initialise
+    end
+end
 
-class Command
-    def initialize(argv)
-
+Main.new

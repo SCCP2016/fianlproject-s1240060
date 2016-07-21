@@ -18,6 +18,9 @@ class CommandParser
         # return Command
         type= argv[0]
         dir_name= argv[1]
+        point_f= 1
+        point_h="ex"
+        point_m=13
         for i in 2..7
             if argv[i]=='-h' then
                 point_h= argv[i+1]
