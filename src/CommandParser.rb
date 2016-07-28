@@ -15,7 +15,7 @@ class CommandParser
         @argv= argv
     end
     def parse
-        if argv[0]== 'generate' then
+        if argv[0]== 'generate'  || argv[0]== 'g' then
             type= argv[0]
             dir_name= argv[1]
             point_f= 1
@@ -38,16 +38,16 @@ class CommandParser
             end
             command= Command.new(type, dir_name, point_h, point_f, point_m)
             return command
-        elsif argv[0]=='submit' then
+        elsif argv[0]=='submit' || argv[0]== 's' then
             type= argv[0]
             dir_name= argv[1]
             command= Command.new(type, dir_name, 0, 0, 0)
             return command;
-        elsif argv[0]== 'list' then
+        elsif argv[0]== 'list' || argv[0]== 'l' then
             type= argv[0]
             command = Command.new(type,0,0,0,0)
             return command
-        elsif argv[0]== 'delete' then
+        elsif argv[0]== 'delete' || argv[0]== 'd' then
             type= argv[0]
             dir_name= argv[1]
             command = Command.new(type,dir_name,0,0,0)
