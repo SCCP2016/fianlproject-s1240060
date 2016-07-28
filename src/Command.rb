@@ -1,5 +1,3 @@
-
-
 class Command
     attr_accessor :type, :dir_name, :header, :format, :max
     def initialize(type, dir_name, point_h, point_f, point_m)
